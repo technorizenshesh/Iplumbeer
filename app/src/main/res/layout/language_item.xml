@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:id="@+id/ivFalf"
+        android:src="@drawable/flag_albania"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_45sdp"
+        />
+
+    <CheckBox
+        android:id="@+id/my_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:padding="@dimen/_15sdp"
+        android:gravity="end|center_vertical"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        />
+
+</RelativeLayout>
+</layout>

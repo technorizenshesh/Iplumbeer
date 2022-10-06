@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "502301479085",
+    "project_id": "iplumber-c6cac",
+    "storage_bucket": "iplumber-c6cac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502301479085:android:ac87c0abd358a97578b624",
+        "android_client_info": {
+          "package_name": "com.my.iplumber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502301479085-o20haaeco1aujrv2u3n1n17ctljkvv62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.iplumber",
+            "certificate_hash": "be053cf6e79e8a61ba7f5be6681e8978782d7b5e"
+          }
+        },
+        {
+          "client_id": "502301479085-7n6fm5qe7ri1b0cd3m73orpdd6t3dn6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUd_3DvSK1ZRj66cfuhAPIChGNMfrXKho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502301479085-7n6fm5qe7ri1b0cd3m73orpdd6t3dn6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

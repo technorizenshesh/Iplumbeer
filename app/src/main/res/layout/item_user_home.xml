@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    tools:ignore="MissingDefaultResource"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/rlPlumber"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPlumber"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/circle_img">
+                </de.hdodenhof.circleimageview.CircleImageView>
+            <ImageView
+                android:id="@+id/ivAvailable"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_alignParentRight="true"
+                />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/rlPlumber"
+                android:gravity="center"
+                android:text="Mira Lubin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPLumberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/rlPlumber"
+            android:text="Mira Lubin"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCallPerRate"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/per_video_call"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:fontFamily="@font/poppinsregular"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/location"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tacoma, WA 98402"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/watch"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Time: 9:30am"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Date: 10/07/2019"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:fontFamily="@font/poppinsregular"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/distance"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance to request in 4.25 miles"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <TextView
+                android:id="@+id/txtViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border_tool"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="@dimen/_7sdp"
+                android:text="VIEW DETAILS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/txtViewDetails"
+                >
+                <TextView
+                    android:id="@+id/tvAlertme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alert Me when Available"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Switch
+                    android:id="@+id/switchAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tvAlertme"
+                    android:scaleX=".8"
+                    android:scaleY=".8" />
+
+            </RelativeLayout>
+
+
+           <!-- <TextView
+                android:id="@+id/txtAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border_green"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="@dimen/_7sdp"
+                android:text="Available"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+-->
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

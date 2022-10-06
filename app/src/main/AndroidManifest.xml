@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.my.iplumber">
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.    READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".act.utility.AppController"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.Iplumber">
+        <service
+            android:enabled="true"
+            android:exported="true"
+            android:name=".act.utility.HeadsUpNotificationService"/>
+        <receiver
+            android:name=".act.utility.CallNotificationActionReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="ConstantApp.CALL_RECEIVE_ACTION" />
+                <action android:name="ConstantApp.CALL_CANCEL_ACTION"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".act.ChangeLanguageAct"
+            android:exported="false" />
+        <activity
+            android:name=".act.PrivacyPolicyAct"
+            android:exported="false" />
+        <activity
+            android:name=".act.utility.IncomingCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".act.IplumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".act.PlumberNotificationAct"
+            android:exported="false" />
+        <activity
+            android:name=".act.ui.HelpAct"
+            android:exported="false" />
+        <activity
+            android:name=".act.UpdatePlumberAct"
+            android:exported="false" />
+        <activity
+            android:name=".act.PaymentSuccessAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.RateUserAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.BookingHistoryAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ChangePasswordAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.UpdateProfileAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.SettingAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.NotificationAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.PaymentScreenAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.PlumDetailsUserAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.HomePlumberAct"
+            android:exported="false"
+            android:label="@string/title_activity_home_plumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.SignUpPlumberAct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.HomeUserAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".act.ForgotAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.SignUpUserAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.LoginAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.SelectPlumberLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoCallingAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".act.utility.IncomingCallService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".act.utility.PlumberNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

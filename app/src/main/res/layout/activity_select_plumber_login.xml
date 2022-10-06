@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@mipmap/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:padding="@dimen/_20sdp"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                >
+
+                <ImageView
+                    android:layout_margin="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/logo">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/select_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Lorem Ipsum is simply dummy text of  dummy text of typesetting industry"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoginPlumber"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgPlumber"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/business_person"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="wrap_content"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/imgPlumber"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="@string/i_am_a_plumber"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RadioButton
+                            android:enabled="false"
+                            android:id="@+id/RadiobtnPlumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:buttonTint="@color/light_blue">
+
+                        </RadioButton>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoginUser"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgPlumberUser"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/investor"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="wrap_content"
+                            >
+                        </ImageView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/imgPlumberUser"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="@string/need_a_plumber"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RadioButton
+                            android:enabled="false"
+                            android:id="@+id/RadiobtnUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:buttonTint="@color/light_blue">
+
+                        </RadioButton>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/RRContinew"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/border_btn">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20sp"
+                        android:text="CONTINUE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

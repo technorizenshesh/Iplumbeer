@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    tools:ignore="MissingDefaultResource"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRCard"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/ic_card"></ImageView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtmaster"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Master Card"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvCardNumber"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/gray"
+                    android:text="XXXX XXXX XXXX 5678"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDateCvv"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/gray"
+                    android:text="Expiry : 01/22      CVV : 908"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivDrop"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/expand">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llAcDetails"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/tvHolderName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light"
+                android:hint="Russell Austin"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/tvBelowCardNumber"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light"
+                android:hint="XXXX XXXX XXXX 5678"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray">
+
+            </EditText>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/tvDate"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_light"
+                    android:hint="01/22"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray">
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/tvCvv"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_light"
+                    android:hint="908"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+            <Switch
+                android:id="@+id/defaultSwitch"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/blue"
+                android:button="@color/blue"
+                android:buttonTint="@color/blue"
+                android:checked="true"
+                android:text="Make default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Switch>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
